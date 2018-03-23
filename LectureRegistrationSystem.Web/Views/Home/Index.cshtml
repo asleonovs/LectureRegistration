@@ -1,0 +1,42 @@
+﻿@model IEnumerable<LectureRegistrationSystem.Web.Models.Lecture>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Šodienas nodarbības</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LectureName)
+        </th>
+        <th>
+            <div>Datums</div>
+        </th>
+        <th>
+            <div>Lekciju apmeklējuma apstiprināšana</div>
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LectureName)
+            </td>
+            <td>
+                <div>@DateTime.Today</div>
+            </td>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Apmēklēju nodarbību" class="btn btn-primary" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+    }
+
+</table>

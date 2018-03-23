@@ -1,0 +1,27 @@
+/***/
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+	width: 30%;
+	margin: auto;
+	margin-top: 8%;
+	margin-bottom: 8%;
+	
+	border: 1px solid #DDDDDD;
+	background: #FAFAFA;
+	font-family: 'Roboto', sans-serif;
+}
+.col-md-8 h5{
+	font-size: 20px;
+}
+.form-horizontal h4{
+	display:none;
+}
+img{
+	width: 130px;
+	margin: 25px;
+	margin-top: 0;
+}
